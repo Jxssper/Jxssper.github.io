@@ -1,608 +1,199 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Portafolio | Joseph Supo Programador Desarrollador Web"
-    />
-    <meta name="robots" content="index,follow" />
-
-    <title>Joseph Supo | Programador - Desarrollador Web</title>
-
-    <!--stylesheet-->
-    <link rel="stylesheet" href="./assets/stylesheet/loader.css" />
-    <link rel="stylesheet" href="./assets/stylesheet/index.css" />
-    <link
-      rel="stylesheet"
-      href="./assets/stylesheet/desktop.css"
-      media="screen and (min-width: 760px)"
-    />
-    <link
-      rel="stylesheet"
-      href="./assets/stylesheet/movil.css"
-      media="screen and (min-width: 980px)"
-    />
-
-    <!--AOS animations-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joseph Supo | Programador | Desarrollador Web BackEnd</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/stylesheet/index.css" />
   </head>
-
-  <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
-    <!--loader-->
-    <div id="loader_container" class="loader_container">
-      <div id="loader" class="loader"></div>
-    </div>
-
-    <!--header-->
-    <header class="header">
-      <!--logo_header-->
-      <img
-        id="logo_header"
-        class="logo_header"
-        src="./assets/images/logo_portafolio.png"
-        alt="Logo Portafolio"
-      />
-      <!--opc_menu-->
-      <nav class="nav_menu">
-        <a href="#inicio" class="active"
-          >Inicio</a
-        >
-        <a href="#sobreMi" data-section="menu" data-value="2">Sobre mi</a>
-        <a href="#habilidades" data-section="menu" data-value="3"
-          >Habilidades</a
-        >
-        <a href="#formacion" data-section="menu" data-value="4">Formación</a>
-        <a href="#proyectos" data-section="menu" data-value="5">Proyectos</a>
-        <a href="#contacto" data-section="menu" data-value="6">Contacto</a>
+  <body>
+    <header>
+      <img class="logo" src="" alt="logo" />
+      <button class="menu_btn" id="abrir"><img src="" alt="menu"></i></button>
+      <nav class="menu" id="menu">
+        <button class="close_menu_btn" id="cerrar">
+          <img src="" alt="cerrar_menu">
+        </button>
+        <ul id="menu_list" class="menu_list">
+          <li><a href="#inicio" class="menu_link">Inicio</a></li>
+          <li><a href="#sobre_mi" class="menu_link">Sobre mí</a></li>
+          <li><a href="#habilidades" class="menu_link">Habilidades</a></li>
+          <li><a href="#formacion" class="menu_link">Formación</a></li>
+          <li><a href="#proyectos" class="menu_link">Proyectos</a></li>
+          <li><a href="#contacto" class="menu_link">Contacto</a></li>
+        </ul>
       </nav>
-
-      <!--btn-->
-      <div id="btn" class="btn">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
     </header>
-
-    <!--Main-->
-
     <main>
-      <!--Inicio-->
       <section id="inicio" class="inicio">
-        <!--imagen de fondo inicio-->
-        <picture class="img_inicio_container" data-aos="zoom-in">
-          <img
-            class="img_inicio"
-            src="./assets/images/logo_portafolio.png"
-            alt="Fondo de inicio"
-          />
+        <picture class="container_img_inicio" data-aos="zoom-in">
+          <img class="img_inicio" src="./assets/images/img_porta.png" alt="img_inicio" />
         </picture>
-        <!--textos de inicio-->
-        <div class="info_inicio">
-          <div class="info_txt_container">
-            <p
-              class="txt_inicio_1"
-              data-section="inicio"
-              data-value="txt_inicio_1"
-            >
-              Hola! Soy
-            </p>
-            <p class="txt_inicio_2">Joseph Supo</p>
-          </div>
-
-          <div>
-            <p
-              class="txt_inicio_3 txt_type"
-              data-section="inicio"
-              data-value="txt_inicio_3"
-            >
-              Desarrolladora web Front-End
-            </p>
-          </div>
-
-          <div class="info_paragraph_container">
-            <p data-section="inicio" data-value="info_paragraph">
-              Soy estudiante del pregrado de Ingeniería de Sistemas y
-              autodidacta creando interface en Unity usando seguimiento de
-              postura corporal.
-            </p>
-          </div>
-
-          <div class="btn_container">
-            <a href="www.google.com" target="_blank">
-              <button class="btn_cv" data-section="inicio" data-value="btn_cv">
-                Descargar CV
-              </button>
-            </a>
-            <a href="#contacto">
-              <button
-                class="btn_contact"
-                data-section="inicio"
-                data-value="btn_contact"
-              >
-                Contacto
-              </button>
-            </a>
-          </div>
+        <div class="inf_inicio">
+          <span class="txt1"> Hola! Soy </span>
+          <span class="txt2"> Joseph Supo </span>
+          <span class="txt3">Programador | </span>
+          <span class="txt4">Desarrollador Web Back-End</span>
+          <span class="txt5">
+            Soy estudiante del pregrado de Ingeniería de Sistemas y autodidacta
+            creando interface en Unity usando seguimiento de postura corporal.
+          </span>
         </div>
-        <!--link con imagenes a redes-->
+        <div class="container_btn_inicio">
+          <a href="" target="_blank">
+            <button class="cv_btn">Descargar CV</button>
+          </a>
+          <a href="">
+            <button class="contacto_btn">Contacto</button>
+          </a>
+        </div>
         <div class="links">
-          <a
-            href="https://www.linkedin.com/in/aohnjs/"
-            target="_blank"
-          >
-            <img
-              src="./assets/images/icon-linkedin.png"
-              alt="LinkedIn"
-              class="icon_linkedin"
-            />
+          <a href="https://github.com/Aohn-Js">
+            <img src="./assets/images/icon-github.png" alt="GitHub" />
           </a>
-          <a href="https://github.com/Aohn-Js" target="_blank">
-            <img
-              src="./assets/images/icon-github.png"
-              alt="GitHub"
-              class="icon_github"
-            />
+          <a href="https://www.linkedin.com/in/aohnjs/">
+            <img src="./assets/images/icon-linkedin.png" alt="LinkedIn" />
           </a>
         </div>
       </section>
-      <!--Sobre mi-->
-      <section class="sobreMi" id="sobreMi">
-        <h1 data-section="sobre_mi" data-value="title" data-aos="fade-up">
-          Sobre mí
-        </h1>
-        <!--textos sobre mi-->
-        <div class="container_content_sobreMi" data-aos="fade-right">
-          <div class="container_texto_sobreMi">
-            <span class="title_sobreMi">Joseph Supo</span>
+      <section class="sobre_mi" id="sobre_mi">
+        <h1 data-aos="fade-up">Sobre mí</h1>
+        <div class="container_txt_sobre_mi">
+          <h2 data-aos="fade-up">Jonathan Supo</h2>
+          <span class="txt_sobre_mi" data-aos="fade-up-right" data-aos-duration="1500">
+            "Soy estudiante del pregrado de Ingeniería de Sistemas y
+            desarrollador Web BackEnd. Busco adquirir experiencia, nuevos
+            conocimientos y fortalecer mi vida profesional."
+            <br />
+            "Soy una persona empática y entusiasta, con competencias enfocadas
+            en el trabajo en equipo, comunicación asertiva, resolución de
+            problemas, responsable y proactiva, me gusta aprender de los demás y
+            superarme continuamente."
+          </span>
+        </div>
+        <picture class="container_img_sobre_mi">
+          <img class="img_sobre_mi" src="./assets/images/img_portada.png" alt="img_sobre_mi">
+        </picture>
+      </section>
+      <section id="habilidades" class="habilidades">
+        <h1 data-aos="fade-up">Habilidades</h1>
+        <div class="container_card_habilidades">          
+            <div class="card_habilidades" data-aos="fade-up" data-aos-duration="500">
+              <img src="./assets/images/icon-html.png" alt="HTML" />
+              <span>HTML5</span>
+            </div>
+            <div class="card_habilidades" data-aos="fade-up" data-aos-duration="500">
+              <img src="./assets/images/icon-css.png" alt="CSS" />
+              <span>CSS 3</span>
+            </div>
+            <div class="card_habilidades" data-aos="fade-up" data-aos-duration="700">
+              <img src="./assets/images/icon-js.png" alt="JavaScript" />
+              <span>JavaScript</span>
+            </div>
+            <div class="card_habilidades" data-aos="fade-up" data-aos-duration="700">
+              <img src="./assets/images/icon-git.png" alt="Git" />
+              <span>Git</span>
+            </div>
+            <div class="card_habilidades" data-aos="fade-up" data-aos-duration="900">
+              <img src="./assets/images/icon-github2.png" alt="GitHub" />
+              <span>GitHub</span>
+            </div>
+            <div class="card_habilidades" data-aos="fade-up" data-aos-duration="900">
+              <img src="./assets/images/icon_python.png" alt="Python" />
+              <span>Python</span>
+            </div>
+            <div class="card_habilidades" data-aos="fade-up"data-aos-duration="1100">
+              <img src="./assets/images/icon_unity.png" alt="Unity" />
+              <span>Unity</span>
+            </div>
+            <div class="card_habilidades" data-aos="fade-up" data-aos-duration="1100">
+              <img src="./assets/images/icon_mediapipe.png" alt="Mediapipe" />
+              <span>Mediapipe</span>
+            </div>          
+        </div>
+      </section>
+      <section id="formacion" class="formacion">
+        <h1 data-aos="fade-up">Formación</h1>
+        <div class="container_card_formacion">
+            <div class="card_formacion" data-aos="fade-down"data-aos-duration="700">
+              <img src="./assets/images/logo_ucsm.png" alt="UCSM" />
+              <span class="estudios_formacion">Ingenieria de Sistemas</span>
+              <span class="tiempo_formacion">2011 - En curso</span>
+            </div>
+            <div class="card_formacion" data-aos="fade-down"data-aos-duration="700">
+              <img src="./assets/images/logo-one.png" alt="One" />
+              <span class="estudios_formacion">Oracle - Desarrollo Web BackEnd</span>
+              <span class="tiempo_formacion">2023</span>
+            </div>          
+        </div>
+      </section>
+      <section id="proyectos" class="proyectos">
+        <h1 data-aos="fade-up">Proyectos</h1>
+        <div class="container_card_proyectos">
+          <div class="card_proyectos">         
+            <div class="portafolio_card_proyectos">
+              <img src="" alt="Portafolio" />
+              <h2>Portafolio</h2>
+              <span>Mi portafolio personal en github.</span>
+            </div>
+            <div class="container_btn_portafolio_card_proyectos">
+              <a href="https://aohn-js.github.io/">
+                <button>
+                  <img src="" alt="Demo Portafolio" />
+                  <span>Demo</span>
+                </button>
+              </a>
+              <a href="">
+                <button>
+                  <img src="" alt="Repo Portafolio" />
+                  <span>Repo</span>
+                </button>
+              </a>
+            </div> 
+          </div>          
+        </div>
+      </section>
+      <section id="contacto" class="contacto">
+        <h1 data-aos="fade-up">Contacto</h1>
+        <div>
+          <div>
             <span
-              class="texto_sobreMi"
-              data-section="sobre_mi"
-              data-value="texto_sobreMi"
-              >Soy estudiante del pregrado de ingenieria de Sistemas y estudiante
-              autodidacta de Desarrollo Web enfocado en programación
-              Back-End.<br />Aspiro conseguir empleo en el mundo del Desarrollo
-              Web y programación, adquirir experiencia, nuevos conocimientos y fortalecer mi
-              vida profesional.<br /><br />Soy una persona empática y
-              entusiasta, con competencias enfocadas en el trabajo en equipo,
-              comunicación asertiva, resolución de problemas, responsable y
-              proactiva, me gusta aprender de los demás y superarme
-              continuamente.</span
+              >Completa el siguiente formulario y me pondré en contacto contigo
+              lo antes posible.</span
             >
           </div>
-          <!--imagen de fondo sobre mi-->
-          <picture class="container_image_sobreMi">
-            <img
-              class="image_sobreMi"
-              src="./assets/images/image-sobreMi.png"
-              alt="Ilustración mujer y café"
-            />
-          </picture>
-        </div>
-      </section>
-      <!--Habilidades-->
-      <section class="habilidades" id="habilidades">
-        <h1 data-section="habilidades" data-value="title" data-aos="fade-up">
-          Habilidades
-        </h1>
-
-        <img
-          src="./assets/images/puntos.png"
-          alt="Decoración puntos"
-          class="puntos1-habilidades"
-        />
-        <img
-          src="./assets/images/puntos.png"
-          alt="Decoración puntos"
-          class="puntos2-habilidades"
-        />
-
-        <div class="habilidades_cards_container">
-          <div
-            class="habilidades_cards"
-            data-aos="fade-up"
-            data-aos-duration="500"
-          >
-            <img src="./assets/images/icon-html.png" alt="HTML" />
-            <p>HTML 5</p>
-          </div>
-
-          <div
-            class="habilidades_cards"
-            data-aos="fade-up"
-            data-aos-duration="700"
-          >
-            <img src="./assets/images/icon-css.png" alt="CSS" />
-            <p>CSS 3</p>
-          </div>
-
-          <div
-            class="habilidades_cards"
-            data-aos="fade-up"
-            data-aos-duration="900"
-          >
-            <img src="./assets/images/icon-js.png" alt="JavaScript" />
-            <p>JavaScript</p>
-          </div>
-
-          <div
-            class="habilidades_cards"
-            data-aos="fade-up"
-            data-aos-duration="1100"
-          >
-            <img src="./assets/images/icon-Python.png" alt="Python" />
-            <p>Python</p>
-          </div>
-
-          <div
-            class="habilidades_cards"
-            data-aos="fade-up"
-            data-aos-duration="500"
-          >
-            <img src="./assets/images/icon-C#.png" alt="C#" />
-            <p>C#</p>
-          </div>
-
-          <div
-            class="habilidades_cards"
-            data-aos="fade-up"
-            data-aos-duration="700"
-          >
-            <img src="./assets/images/icon-git.png" alt="Git" />
-            <p>Git</p>
-          </div>
-
-          <div
-            class="habilidades_cards"
-            data-aos="fade-up"
-            data-aos-duration="900"
-          >
-            <img src="./assets/images/icon-github2.png" alt="GitHub" />
-            <p>Github</p>
-          </div>
-
-          <div
-            class="habilidades_cards"
-            data-aos="fade-up"
-            data-aos-duration="1100"
-          >
-            <img src="./assets/images/icon-Unity.png" alt="Unity" />
-            <p>Unity</p>
-          </div>
-        </div>
-      </section>
-      <!--Formación-->
-      <section class="formacion" id="formacion">
-        <h1 data-section="formacion" data-value="title" data-aos="fade-up">
-          Formación
-        </h1>
-
-        <div class="formacion_cards_container">
-          <div
-            class="formacion_cards"
-            data-aos="fade-down"
-            data-aos-easing="linear"
-            data-aos-duration="500"
-          >
-            <img
-              class="logo-unal"
-              src="./assets/images/logo-ucsm.png"
-              alt="Logo - Universidad Catolica de Santa Maria"
-            />
-            <div class="formacion_txt_container">
-              <p data-section="formacion" data-value="formacion1">
-                Ingenieria de Sistemas
-              </p>
-              <p data-section="formacion" data-value="tiempo-formacion1">
-                2011 - En curso
-              </p>
+          <form action="">
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <textarea name="" id=""></textarea>
+            <div>
+              <button>Enviar</button>
             </div>
-          </div>
-
-          <div
-            class="formacion_cards"
-            data-aos="fade-up"
-            data-aos-duration="500"
-          >
-            <img
-              class="logo-one"
-              src="./assets/images/logo-one.png"
-              alt="Logo - ONE: Oracle Next Education"
-            />
-            <div class="container_texto--formacion">
-              <p data-section="formacion" data-value="formacion2">
-                Desarrollo Web Full-Stack
-              </p>
-              <p data-section="formacion" data-value="tiempo-formacion2">
-                2023
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--Proyectos-->
-      <section class="proyectos" id="proyectos">
-        <h1 data-section="proyectos" data-value="title" data-aos="fade-up">
-          Proyectos
-        </h1>
-
-        <img
-          src="./assets/images/puntos.png"
-          alt="Decoración puntos"
-          class="puntos1-proyectos"
-        />
-        <img
-          src="./assets/images/puntos.png"
-          alt="Decoración puntos"
-          class="puntos2-proyectos"
-        />
-
-        <div class="proyectos_cards_container">
-          <div
-            class="proyectos_cards card_JuegoAhorcado"
-            data-aos="zoom-in-up"
-            data-aos-anchor-placement="center-bottom"
-          >
-            <div class="proyectos_imgCard_container">
-              <img
-                src="./assets/images/cap-juegoAhorcado.png"
-                alt="Proyecto: Juego del ahorcado"
-              />
-            </div>
-
-            <div class="proyectos_textCard_container">
-              <h2 data-section="proyectos" data-value="title-proyecto1">
-                Juego del Ahorcado
-              </h2>
-              <p data-section="proyectos" data-value="info-proyecto1">
-                Un juego donde el usuario debe adivinar la palabra secreta con
-                un cierto número de oportunidades. La palabra se escoge de forma
-                aleatoria por el programa y el usuario perderá en el momento en
-                que la horca se complete.
-              </p>
-            </div>
-
-            <div class="proyectos_btn_container">
-              <a
-                href=""
-                target="_blank"
-              >
-                <button class="btn_demo">
-                  <img
-                    src="./assets/images/icon-demoProyecto.png"
-                    alt="Demostración"
-                  />DEMO
-                </button>
-              </a>
-
-              <a
-                href=""
-                target="_blank"
-              >
-                <button class="btn_repo">
-                  <img
-                    src="./assets/images/icon-githubProyecto.png"
-                    alt="Repositorio de github"
-                  />REPO
-                </button>
-              </a>
-            </div>
-          </div>
-
-          <div
-            class="proyectos_cards card_portafolio"
-            data-aos="zoom-in-up"
-            data-aos-anchor-placement="center-bottom"
-          >
-            <div class="proyectos_imgCard_container">
-              <img
-                src="./assets/images/cap-portafolio.png"
-                alt="Proyecto: Portafolio"
-              />
-            </div>
-
-            <div class="poryectos_textCard_container text_portafolio">
-              <h2 data-section="proyectos" data-value="title-proyecto2">
-                Portafolio
-              </h2>
-              <p data-section="proyectos" data-value="info-proyecto2">
-                Mi portafolio web personal, donde se encuentran algunos de mis
-                proyectos más destacados, mis habilidades técnicas y un poco
-                sobre mi formación.
-              </p>
-            </div>
-
-            <div class="proyectos_btn_container">
-              <a href="#" target="_blank">
-                <button class="btn_demo">
-                  <img
-                    src="./assets/images/icon-demoProyecto.png"
-                    alt="Demostración"
-                  />DEMO
-                </button>
-              </a>
-
-              <a
-                href="https://github.com/Aohn-Js/aohn-js.github.io"
-                target="_blank"
-              >
-                <button class="btn_repo">
-                  <img
-                    src="./assets/images/icon-githubProyecto.png"
-                    alt="Repositorio de github"
-                  />REPO
-                </button>
-              </a>
-            </div>
-          </div>
-
-          <div
-            class="proyectos_cards card_encriptador"
-            data-aos="zoom-in-up"
-            data-aos-anchor-placement="center-bottom"
-          >
-            <div class="proyectos_imgCard_container">
-              <img
-                src="./assets/images/cap-encriptador.png"
-                alt="Proyecto: Encriptador"
-              />
-            </div>
-
-            <div class="proyectos_textCard_container">
-              <h2 data-section="proyectos" data-value="title-proyecto3">
-                Encriptador de Texto
-              </h2>
-              <p data-section="proyectos" data-value="info-proyecto3">
-                Un ecriptador donde el usuario puede escribir un texto y el
-                encriptador lo codifica con llaves ya programadas. El
-                encriptador también permite desencriptar el texto.
-              </p>
-            </div>
-
-            <div class="proyectos_btn_container">
-              <a
-                href=""
-                target="_blank"
-              >
-                <button class="btn_demo">
-                  <img
-                    src="./assets/images/icon-demoProyecto.png"
-                    alt="Demostración"
-                  />DEMO
-                </button>
-              </a>
-
-              <a
-                href=""
-                target="_blank"
-              >
-                <button class="btn_repo">
-                  <img
-                    src="./assets/images/icon-githubProyecto.png"
-                    alt="Repositorio de github"
-                  />REPO
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--Contacto-->
-      <section class="contact" id="contact">
-        <h1 data-section="contact" data-value="title" data-aos="fade-up">
-          Contacto
-        </h1>
-
-        <div
-          class="contact_box_container"
-          data-aos="fade-up"
-          data-aos-anchor-placement="center-bottom"
-        >
-          <div class="contact_container">
-            <div class="contac_txt_container">
-              <p data-section="contact" data-value="text">
-                Completa el siguiente formulario y me pondré en contacto contigo
-                lo antes posible.
-              </p>
-            </div>
-
-            <form
-              id="form"
-              class="contact_form"
-              name="contacto-portafolio"
-              netlify
-            >
-              <input
-                id="nombre"
-                type="text"
-                name="name"
-                placeholder="Nombre | Name"
-                required
-              />
-              <input
-                id="email"
-                type="email"
-                name="email"
-                placeholder="E-mail"
-                required
-              />
-              <input
-                id="asunto"
-                type="text"
-                name="affair"
-                placeholder="Asunto | Subject"
-                required
-              />
-              <textarea
-                id="mensaje"
-                cols="20"
-                rows="4"
-                name="message"
-                placeholder="Mensaje | Message"
-                required
-              ></textarea>
-
-              <div class="contact_btn_form">
-                <button
-                  id="btn_enviar"
-                  type="submit"
-                  data-section="contact"
-                  data-value="btn_enviar"
-                >
-                  Enviar
-                </button>
-              </div>
-            </form>
-          </div>
+          </form>
         </div>
       </section>
     </main>
-
-    <!--Footer-->
-
-    <footer>
-      <div class="footer_container">
-        <!--Redes sociales-->
-        <div class="footer_redes_container">
-          <a href="https://www.linkedin.com/in/aohnjs/" target="_blank">
-            <img src="./assets/images/linkedin_footer.png" alt="LinkedIn" />
-          </a>
-          <a href="https://github.com/Aohn-Js" target="_blank">
-            <img src="./assets/images/github_footer.png" alt="GitHub" />
-          </a>
-        </div>
-      
-
-        <!--Texto del footer-->
-
-        <div class="footer_text_container">
-          <span>Copyright © | Coded by Joseph Supo</span>
-        </div>
-      </div>  
-    </footer>
-
-    <!--Boton para subir-->
-
-    <div class="btn_top_container">
-      <div class="btn_top">
-        <i class="fa-solid fa-chevron-up"></i
-        ><!--link de fontawesome.com (tiene la imagen del boton)-->
-      </div>
-    </div>
-
-    <!--AOS animaciones-->
-
+    <script src="./script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
     <script>
       AOS.init();
     </script>
-
-    <!--Script-->
-
-    <script src="./script.js"></script>
   </body>
+  <footer>
+    <div>
+      <a href="github">
+        <i class="bi bi-github"></i>
+        <!--<img src="" alt="GitHub" />-->
+      </a>
+      <a href="linkedin">
+        <i class="bi bi-linkedin"></i>
+        <!--<img src="" alt="LinkedIn" />-->
+      </a>
+    </div>
+    <div>
+      <span>Copyright © | Coded by Joseph Supo</span>
+    </div>
+  </footer>
 </html>
