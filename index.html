@@ -10,10 +10,20 @@
   <body>
     <header>
       <img class="logo" src="" alt="logo" />
-      <button class="menu_btn" id="abrir"><img src="" alt="menu"></i></button>
+      <button class="menu_btn" id="abrir">
+        <div class="menu_icono" id="botonMenu">
+          <span class="linea"></span>
+          <span class="linea"></span>
+          <span class="linea"></span>
+        </div>
+      </button>
       <nav class="menu" id="menu">
         <button class="close_menu_btn" id="cerrar">
-          <img src="" alt="cerrar_menu">
+          <div class="menu_icono active" id="botonMenu">
+            <span class="linea"></span>
+            <span class="linea"></span>
+            <span class="linea"></span>
+          </div>
         </button>
         <ul id="menu_list" class="menu_list">
           <li><a href="#inicio" class="menu_link">Inicio</a></li>
@@ -28,7 +38,11 @@
     <main>
       <section id="inicio" class="inicio">
         <picture class="container_img_inicio" data-aos="zoom-in">
-          <img class="img_inicio" src="./assets/images/img_porta.png" alt="img_inicio" />
+          <img
+            class="img_inicio"
+            src="./assets/images/img_porta.png"
+            alt="img_inicio"
+          />
         </picture>
         <div class="inf_inicio">
           <span class="txt1"> Hola! Soy </span>
@@ -44,9 +58,6 @@
           <a href="" target="_blank">
             <button class="cv_btn">Descargar CV</button>
           </a>
-          <a href="">
-            <button class="contacto_btn">Contacto</button>
-          </a>
         </div>
         <div class="links">
           <a href="https://github.com/Aohn-Js">
@@ -61,77 +72,127 @@
         <h1 data-aos="fade-up">Sobre mí</h1>
         <div class="container_txt_sobre_mi">
           <h2 data-aos="fade-up">Jonathan Supo</h2>
-          <span class="txt_sobre_mi" data-aos="fade-up-right" data-aos-duration="1500">
-            "Soy estudiante del pregrado de Ingeniería de Sistemas y
+          <span
+            class="txt_sobre_mi"
+            data-aos="fade-up-right"
+            data-aos-duration="1500"
+          >
+            Soy estudiante del pregrado de Ingeniería de Sistemas y
             desarrollador Web BackEnd. Busco adquirir experiencia, nuevos
-            conocimientos y fortalecer mi vida profesional."
+            conocimientos y fortalecer mi vida profesional.
             <br />
-            "Soy una persona empática y entusiasta, con competencias enfocadas
+            Soy una persona empática y entusiasta, con competencias enfocadas
             en el trabajo en equipo, comunicación asertiva, resolución de
             problemas, responsable y proactiva, me gusta aprender de los demás y
-            superarme continuamente."
+            superarme continuamente.
           </span>
         </div>
         <picture class="container_img_sobre_mi">
-          <img class="img_sobre_mi" src="./assets/images/img_portada.png" alt="img_sobre_mi">
+          <img
+            class="img_sobre_mi"
+            src="./assets/images/img_portada.png"
+            alt="img_sobre_mi"
+          />
         </picture>
       </section>
       <section id="habilidades" class="habilidades">
         <h1 data-aos="fade-up">Habilidades</h1>
-        <div class="container_card_habilidades">          
-            <div class="card_habilidades" data-aos="fade-up" data-aos-duration="500">
-              <img src="./assets/images/icon-html.png" alt="HTML" />
-              <span>HTML5</span>
-            </div>
-            <div class="card_habilidades" data-aos="fade-up" data-aos-duration="500">
-              <img src="./assets/images/icon-css.png" alt="CSS" />
-              <span>CSS 3</span>
-            </div>
-            <div class="card_habilidades" data-aos="fade-up" data-aos-duration="700">
-              <img src="./assets/images/icon-js.png" alt="JavaScript" />
-              <span>JavaScript</span>
-            </div>
-            <div class="card_habilidades" data-aos="fade-up" data-aos-duration="700">
-              <img src="./assets/images/icon-git.png" alt="Git" />
-              <span>Git</span>
-            </div>
-            <div class="card_habilidades" data-aos="fade-up" data-aos-duration="900">
-              <img src="./assets/images/icon-github2.png" alt="GitHub" />
-              <span>GitHub</span>
-            </div>
-            <div class="card_habilidades" data-aos="fade-up" data-aos-duration="900">
-              <img src="./assets/images/icon_python.png" alt="Python" />
-              <span>Python</span>
-            </div>
-            <div class="card_habilidades" data-aos="fade-up"data-aos-duration="1100">
-              <img src="./assets/images/icon_unity.png" alt="Unity" />
-              <span>Unity</span>
-            </div>
-            <div class="card_habilidades" data-aos="fade-up" data-aos-duration="1100">
-              <img src="./assets/images/icon_mediapipe.png" alt="Mediapipe" />
-              <span>Mediapipe</span>
-            </div>          
+        <div class="container_card_habilidades">
+          <div
+            class="card_habilidades"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
+            <img src="./assets/images/icon-html.png" alt="HTML" />
+            <span>HTML5</span>
+          </div>
+          <div
+            class="card_habilidades"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
+            <img src="./assets/images/icon-css.png" alt="CSS" />
+            <span>CSS 3</span>
+          </div>
+          <div
+            class="card_habilidades"
+            data-aos="fade-up"
+            data-aos-duration="700"
+          >
+            <img src="./assets/images/icon-js.png" alt="JavaScript" />
+            <span>JavaScript</span>
+          </div>
+          <div
+            class="card_habilidades"
+            data-aos="fade-up"
+            data-aos-duration="700"
+          >
+            <img src="./assets/images/icon-git.png" alt="Git" />
+            <span>Git</span>
+          </div>
+          <div
+            class="card_habilidades"
+            data-aos="fade-up"
+            data-aos-duration="900"
+          >
+            <img src="./assets/images/icon-github2.png" alt="GitHub" />
+            <span>GitHub</span>
+          </div>
+          <div
+            class="card_habilidades"
+            data-aos="fade-up"
+            data-aos-duration="900"
+          >
+            <img src="./assets/images/icon_python.png" alt="Python" />
+            <span>Python</span>
+          </div>
+          <div
+            class="card_habilidades"
+            data-aos="fade-up"
+            data-aos-duration="1100"
+          >
+            <img src="./assets/images/icon_unity.png" alt="Unity" />
+            <span>Unity</span>
+          </div>
+          <div
+            class="card_habilidades"
+            data-aos="fade-up"
+            data-aos-duration="1100"
+          >
+            <img src="./assets/images/icon_mediapipe.png" alt="Mediapipe" />
+            <span>Mediapipe</span>
+          </div>
         </div>
       </section>
       <section id="formacion" class="formacion">
         <h1 data-aos="fade-up">Formación</h1>
         <div class="container_card_formacion">
-            <div class="card_formacion" data-aos="fade-down"data-aos-duration="700">
-              <img src="./assets/images/logo_ucsm.png" alt="UCSM" />
-              <span class="estudios_formacion">Ingenieria de Sistemas</span>
-              <span class="tiempo_formacion">2011 - En curso</span>
-            </div>
-            <div class="card_formacion" data-aos="fade-down"data-aos-duration="700">
-              <img src="./assets/images/logo-one.png" alt="One" />
-              <span class="estudios_formacion">Oracle - Desarrollo Web BackEnd</span>
-              <span class="tiempo_formacion">2023</span>
-            </div>          
+          <div
+            class="card_formacion"
+            data-aos="fade-down"
+            data-aos-duration="700"
+          >
+            <img src="./assets/images/logo_ucsm.png" alt="UCSM" />
+            <span class="estudios_formacion">Ingenieria de Sistemas</span>
+            <span class="tiempo_formacion">2011 - En curso</span>
+          </div>
+          <div
+            class="card_formacion"
+            data-aos="fade-down"
+            data-aos-duration="700"
+          >
+            <img src="./assets/images/logo-one.png" alt="One" />
+            <span class="estudios_formacion"
+              >Oracle - Desarrollo Web BackEnd</span
+            >
+            <span class="tiempo_formacion">2023</span>
+          </div>
         </div>
       </section>
       <section id="proyectos" class="proyectos">
         <h1 data-aos="fade-up">Proyectos</h1>
         <div class="container_card_proyectos">
-          <div class="card_proyectos">         
+          <div class="card_proyectos">
             <div class="portafolio_card_proyectos">
               <img src="" alt="Portafolio" />
               <h2>Portafolio</h2>
@@ -139,36 +200,42 @@
             </div>
             <div class="container_btn_portafolio_card_proyectos">
               <a href="https://aohn-js.github.io/">
-                <button>
-                  <img src="" alt="Demo Portafolio" />
+                <button class="bnt_demo">
+                  <img
+                    src="./assets/images/icon-github.png"
+                    alt="Demo Portafolio"
+                  />
                   <span>Demo</span>
                 </button>
               </a>
-              <a href="">
-                <button>
-                  <img src="" alt="Repo Portafolio" />
+              <a href="https://github.com/Aohn-Js/aohn-js.github.io">
+                <button class="btn_repo">
+                  <img
+                    src="./assets/images/icon-github.png"
+                    alt="Repo Portafolio"
+                  />
                   <span>Repo</span>
                 </button>
               </a>
-            </div> 
-          </div>          
+            </div>
+          </div>
         </div>
       </section>
       <section id="contacto" class="contacto">
         <h1 data-aos="fade-up">Contacto</h1>
-        <div>
-          <div>
+        <div class="container_contacto">
+          <div class="container_text_contacto">
             <span
               >Completa el siguiente formulario y me pondré en contacto contigo
               lo antes posible.</span
             >
           </div>
-          <form action="">
-            <input type="text" />
-            <input type="text" />
-            <input type="text" />
-            <textarea name="" id=""></textarea>
-            <div>
+          <form class="form_contacto">
+            <input type="text" placeholder="Nombre | Name" />
+            <input type="text" placeholder="E-mail" />
+            <input type="text" placeholder="Asunto | Subject" />
+            <textarea name="" id="" placeholder="Mensaje | Message"></textarea>
+            <div class="btn_form_contacto">
               <button>Enviar</button>
             </div>
           </form>
@@ -182,18 +249,22 @@
     </script>
   </body>
   <footer>
-    <div>
+    <div class="container_footer">
       <a href="github">
-        <i class="bi bi-github"></i>
-        <!--<img src="" alt="GitHub" />-->
+        <img src="./assets/images/icon-github.png" alt="GitHub" />
       </a>
       <a href="linkedin">
-        <i class="bi bi-linkedin"></i>
-        <!--<img src="" alt="LinkedIn" />-->
+        <img src="./assets/images/icon-linkedin.png" alt="LinkedIn" />
       </a>
     </div>
-    <div>
+    <div class="txt_footer">
       <span>Copyright © | Coded by Joseph Supo</span>
     </div>
   </footer>
+  <div class="container_btn_top show">
+    <div class="btn_top">
+      <a class="subir_inicio" href="#inicio">&#8595
+      </a>
+    </div>
+  </div>
 </html>

@@ -16,3 +16,19 @@ menu_links.forEach(link => {
         menu.classList.remove("visible");
     })
 })
+
+window.onscroll = function() {
+    if (document.documentElement.scrollTop > 100) {
+        document.querySelector('.container_btn_top').classList.add('show');
+    }
+    else {
+        document.querySelector('.container_btn_top').classList.remove('show');
+    }
+}
+
+document.querySelector('.container_btn_top').addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
