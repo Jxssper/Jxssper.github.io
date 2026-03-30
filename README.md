@@ -7,7 +7,7 @@
 
 ---
 
-![portafolio-presentacion]
+![portafolio-presentacion](https://raw.githubusercontent.com/Jxssper/Jxssper.github.io/refs/heads/main/assets/images/Demo_portafolio.png)
 
 ---
 
